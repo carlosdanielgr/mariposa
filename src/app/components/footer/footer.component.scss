@@ -1,0 +1,43 @@
+@use "./../../../styles/mixins" as *;
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 1.5rem 1rem;
+  @include screen(small) {
+    padding: 2rem 1rem;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    @include screen(small) {
+      text-align: start;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    &-title {
+      padding-bottom: 1rem;
+      font-size: 1.25rem;
+      max-width: 360px;
+      margin: 0;
+      @include screen(small) {
+        padding-bottom: 2rem;
+        font-size: 2.12rem;
+      }
+    }
+  }
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include screen(small) {
+      text-align: end;
+      align-items: flex-end;
+    }
+  }
+  &__copyright {
+    font-size: 12px;
+  }
+}
