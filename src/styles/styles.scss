@@ -1,4 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+@use "mixins" as *;
 
 /* Importing Bootstrap SCSS file. */
 @use "bootstrap/scss/bootstrap";
+
+* {
+  font-size: 14px;
+  font-family: gilroy, Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  @include screen(small) {
+    font-size: 16px;
+  }
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.container {
+  max-width: var(--mx-width);
+  margin: 0 auto;
+}
+
+:root {
+  --mx-width: 800px;
+}

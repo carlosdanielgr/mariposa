@@ -1,0 +1,36 @@
+@use "./../../../styles/mixins" as *;
+
+%d-flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  padding: 3rem 1rem;
+  @include screen(small) {
+    padding: 1rem;
+  }
+  &__container {
+    @extend %d-flex;
+    align-items: center;
+    @include screen(custom, max, 768) {
+      justify-content: center;
+    }
+  }
+  &__logo {
+    max-width: 11rem;
+  }
+  &__nav {
+    flex-basis: 60%;
+    @extend %d-flex;
+    > a {
+      font-size: 14px;
+    }
+    @include screen(custom, max, 768) {
+      display: none;
+    }
+  }
+}
