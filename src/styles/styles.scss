@@ -29,8 +29,19 @@ a {
 .content {
   max-width: var(--mx-width);
   margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.primary-button {
+  color: #fff;
+  background-color: #5485ee;
+  border-radius: 50px;
+  padding: 1rem 2rem;
+  &:hover {
+    background-color: #3f6ad8;
+  }
 }
 
 :root {
-  --mx-width: 800px;
+  --mx-width: 820px;
 }

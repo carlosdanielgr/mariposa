@@ -7,6 +7,20 @@
   background-size: cover;
   background-image: url(./../../../../public/images/main.png);
   @include screen(custom, max, 768) {
-    transform: scaleX(-1);
+    // transform: scaleX(-1);
+  }
+  &__container {
+    padding: 10rem 0 0;
+    max-width: 620px;
+    > p {
+      font-size: 1.12rem;
+    }
+  }
+  &__title {
+    font-size: 2.12rem;
+    font-weight: 700;
+    @include screen(small) {
+      font-size: 2.5rem;
+    }
   }
 }
