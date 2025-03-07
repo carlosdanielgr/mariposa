@@ -1,0 +1,45 @@
+@use "./../../../styles/mixins" as *;
+
+.great-delivery {
+  position: relative;
+  &__info {
+    padding: 6rem 0 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+  }
+  &__text {
+    flex: 1;
+    min-width: 300px;
+    > p {
+      color: #424242;
+    }
+    @include screen(small) {
+      margin-left: -50px;
+    }
+  }
+  &__image {
+    min-width: 300px;
+    max-width: 400px;
+  }
+  &__title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #395aa2;
+    max-width: 15rem;
+  }
+  &__flower1,
+  &__flower2 {
+    position: absolute;
+    background-image: url("../../../../public/images/flower.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+  &__flower1 {
+    height: 395px;
+    width: 395px;
+    right: -10px;
+  }
+}
