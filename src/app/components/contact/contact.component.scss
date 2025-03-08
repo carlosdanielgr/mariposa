@@ -1,6 +1,11 @@
+@use "./../../../styles/mixins" as *;
+
 .contact {
   position: relative;
   &__container {
+    display: grid;
+    gap: 1rem;
+    padding: 4rem 1rem;
     &::after {
       content: "";
       height: 100%;
@@ -12,8 +17,19 @@
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
-      background-color: rgba(70, 70, 70, 0.59);
+      filter: brightness(0.7);
       z-index: -1;
+    }
+    > p {
+      font-size: 1.37rem;
+      font-weight: 700;
+      @include screen(small) {
+        font-size: 2rem;
+      }
+    }
+    > figure {
+      max-width: 268px;
+      margin: 0 auto;
     }
   }
 }
