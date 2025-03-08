@@ -36,10 +36,10 @@
               }
             ],
             "styles": ["src/styles/styles.scss"],
-            "scripts": [],
-            "polyfills": [
-              "@angular/localize/init"
-            ]
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+            ],
+            "polyfills": ["@angular/localize/init"]
           },
           "configurations": {
             "production": {
@@ -93,9 +93,7 @@
             ],
             "styles": ["src/styles.scss"],
             "scripts": [],
-            "polyfills": [
-              "@angular/localize/init"
-            ]
+            "polyfills": ["@angular/localize/init"]
           }
         }
       }

@@ -1,0 +1,40 @@
+<button
+  class="btn menu__button"
+  type="button"
+  data-bs-toggle="offcanvas"
+  data-bs-target="#offcanvasExample"
+  aria-controls="offcanvasExample"
+>
+  <img src="./icons/list.svg" alt="menu" />
+</button>
+
+<div
+  class="offcanvas offcanvas-end menu__offcanvas"
+  tabindex="-1"
+  id="offcanvasExample"
+  aria-labelledby="offcanvasExampleLabel"
+>
+  <div class="offcanvas-body text-center">
+    <div class="menu__offcanvas-body">
+      <figure>
+        <img src="./images/logo-blue.png" alt="logo-blue" />
+      </figure>
+      <div class="d-flex flex-column gap-5">
+        <a href="">Who we serve</a>
+        <a href="">Our qualities</a>
+        <a href="">Sales & contact</a>
+      </div>
+      <figure>
+        <img src="./images/mark.png" alt="mark" />
+      </figure>
+    </div>
+    <button
+      type="button"
+      class="btn"
+      data-bs-dismiss="offcanvas"
+      aria-label="Close"
+    >
+      Close
+    </button>
+  </div>
+</div>
