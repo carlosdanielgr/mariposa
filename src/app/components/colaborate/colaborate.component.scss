@@ -1,0 +1,59 @@
+@use "./../../../styles/mixins" as *;
+
+.colaborate {
+  padding: 4rem 1rem;
+  background-color: #cfddfa;
+  &__container {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1rem;
+    padding: 0;
+    max-width: 950px;
+    margin: 0 auto;
+    border: 12px solid;
+    border-image: linear-gradient(
+      159.69deg,
+      #a6c0f6 13.51%,
+      rgba(166, 192, 246, 0.2) 72.1%
+    );
+    border-image-slice: 1;
+    @include screen(custom, min, 450) {
+      padding: 2rem;
+    }
+    @include screen(small) {
+      flex-direction: row;
+      border-width: 21px;
+      > div,
+      > figure {
+        flex: 1;
+      }
+    }
+  }
+  &__info {
+    padding: 1rem;
+    > span {
+      background-color: #5485ee;
+      font-size: 14px;
+      padding: 0.1rem 0.5rem;
+      border-radius: 50px;
+    }
+    > p {
+      color: #424242;
+      font-size: 1.25rem;
+      > span {
+        font-weight: 700;
+        font-size: 1.25rem;
+        color: #4770c8;
+      }
+    }
+  }
+  &__title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #395aa2;
+    max-width: 4rem;
+    @include screen(small) {
+      font-size: 2.7rem;
+    }
+  }
+}
