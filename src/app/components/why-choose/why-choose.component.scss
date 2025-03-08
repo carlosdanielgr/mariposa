@@ -1,0 +1,61 @@
+@use "./../../../styles/mixins" as *;
+
+.why-choose {
+  padding: 4rem 0;
+  &__container {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    @include screen(small) {
+      padding: 7rem 0;
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+  &__image {
+    max-width: 200px;
+    @include screen(small) {
+      grid-row: 1/3;
+      grid-column: 4/6;
+      max-width: none;
+    }
+  }
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    grid-column: 1/3;
+    @include screen(small) {
+      grid-column: 1/4;
+    }
+    > div {
+      display: flex;
+      flex-direction: column;
+      padding: 0.5rem;
+      background-color: #e8eefa;
+      > span {
+        &:first-child {
+          font-size: 1.37rem;
+          font-weight: 700;
+          color: #2c457c;
+        }
+        &:last-child {
+          color: #395aa2;
+        }
+      }
+    }
+  }
+  &__title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1e3056;
+    margin: 0;
+    @include screen(custom, max, 768) {
+      align-self: end;
+    }
+    @include screen(small) {
+      font-size: 2.7rem;
+      grid-column: 1/4;
+      align-self: center;
+    }
+  }
+}
