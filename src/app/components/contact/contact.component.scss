@@ -1,0 +1,19 @@
+.contact {
+  position: relative;
+  &__container {
+    &::after {
+      content: "";
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      position: absolute;
+      background-image: url("../../../../public/images/contact.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-color: rgba(70, 70, 70, 0.59);
+      z-index: -1;
+    }
+  }
+}
