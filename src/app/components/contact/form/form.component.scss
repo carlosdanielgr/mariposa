@@ -41,6 +41,7 @@
       &::placeholder {
         color: #1e3056;
         opacity: 0.6;
+        font-size: 0.9rem;
       }
       &:focus,
       &:active {
@@ -60,11 +61,12 @@
     }
     > select {
       color: #1e3056;
+      font-size: 0.9rem;
       option {
+        color: #1e3056;
         &:first-child {
           opacity: 0.6;
         }
-        color: #1e3056;
       }
     }
   }

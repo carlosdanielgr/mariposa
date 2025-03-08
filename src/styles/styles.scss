@@ -6,7 +6,7 @@
 
 * {
   font-size: 14px;
-  font-family: gilroy, Arial, Helvetica, sans-serif;
+  font-family: Open Sans, Arial, Helvetica, sans-serif;
   color: #ffffff;
   @include screen(small) {
     font-size: 16px;
@@ -47,7 +47,7 @@ a {
 }
 
 .second-button {
-  color: #5485ee;
+  color: #2c457c;
   background-color: transparent;
   border-color: #5485ee;
   @extend %btn;
