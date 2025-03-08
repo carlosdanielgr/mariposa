@@ -95,6 +95,9 @@
             "scripts": [],
             "polyfills": ["@angular/localize/init"]
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }

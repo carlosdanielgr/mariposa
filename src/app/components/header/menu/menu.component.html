@@ -20,9 +20,15 @@
         <img src="./images/logo-blue.png" alt="logo-blue" />
       </figure>
       <div class="d-flex flex-column gap-5">
-        <a href="">Who we serve</a>
-        <a href="">Our qualities</a>
-        <a href="">Sales & contact</a>
+        <a data-bs-dismiss="offcanvas" (click)="onNavigate('#who-we-serve')"
+          >Who we serve</a
+        >
+        <a data-bs-dismiss="offcanvas" (click)="onNavigate('#our-qualities')"
+          >Our qualities</a
+        >
+        <a data-bs-dismiss="offcanvas" (click)="onNavigate('#contact')"
+          >Sales & contact</a
+        >
       </div>
       <figure>
         <img src="./images/mark.png" alt="mark" />

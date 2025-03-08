@@ -4,14 +4,13 @@
   [class.color]="lastScrollTop > 100"
 >
   <div class="header__container content">
-    <figure class="header__logo">
+    <figure role="button" class="header__logo" (click)="onInit()">
       <img src="./images/logo.png" alt="" />
     </figure>
     <div class="header__nav">
-      <a href="">Who we serve</a>
-      <a href="">Our qualities</a>
-      <a href="">Partners</a>
-      <a href="">Sales & contact</a>
+      <a href="#who-we-serve">Who we serve</a>
+      <a href="#our-qualities">Our qualities</a>
+      <a href="#contact">Sales & contact</a>
     </div>
     <app-menu />
   </div>

@@ -22,4 +22,12 @@ export class HeaderComponent {
 
     this.lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
   }
+
+  onInit() {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: 'smooth',
+    });
+  }
 }

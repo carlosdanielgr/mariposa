@@ -4,8 +4,10 @@ import { Component } from '@angular/core';
   selector: 'app-menu',
   imports: [],
   templateUrl: './menu.component.html',
-  styleUrl: './menu.component.scss'
+  styleUrl: './menu.component.scss',
 })
 export class MenuComponent {
-
+  onNavigate(url: string) {
+    window.location.href = url;
+  }
 }

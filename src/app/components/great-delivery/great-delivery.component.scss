@@ -33,14 +33,35 @@
   &__flower1,
   &__flower2 {
     position: absolute;
-    background-image: url("../../../../public/images/flower.png");
     background-size: cover;
     background-repeat: no-repeat;
-    z-index: 1;
+    z-index: -1;
   }
   &__flower1 {
-    height: 395px;
-    width: 395px;
-    right: -10px;
+    height: 250px;
+    width: 250px;
+    top: -2rem;
+    left: -5rem;
+    background-image: url("../../../../public/images/flower1.svg");
+    @include screen(small) {
+      height: 350px;
+      width: 350px;
+      top: -2rem;
+      right: -5rem;
+      left: auto;
+    }
+  }
+  &__flower2 {
+    height: 370px;
+    width: 370px;
+    bottom: -12rem;
+    right: -8rem;
+    background-image: url("../../../../public/images/flower2.svg");
+    @include screen(small) {
+      height: 630px;
+      width: 630px;
+      bottom: -16rem;
+      left: -13rem;
+    }
   }
 }

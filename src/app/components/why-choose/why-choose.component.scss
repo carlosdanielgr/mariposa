@@ -1,7 +1,26 @@
 @use "./../../../styles/mixins" as *;
 
 .why-choose {
+  position: relative;
   padding: 4rem 0;
+  overflow: hidden;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 410px;
+    bottom: 0;
+    right: -1rem;
+    background-image: url("../../../../public/images/flower3.png");
+    background-repeat: no-repeat;
+    z-index: -1;
+    @include screen(small) {
+      width: 380px;
+      height: 620px;
+      left: -1rem;
+      top: 4rem;
+    }
+  }
   &__container {
     display: grid;
     gap: 1rem;

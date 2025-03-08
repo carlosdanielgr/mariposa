@@ -54,6 +54,11 @@ a {
   &:hover {
     background-color: #5485ee;
   }
+  &:focus,
+  &:focus-visible,
+  &:active {
+    color: #2c457c !important;
+  }
 }
 
 :root {
