@@ -7,9 +7,11 @@
 }
 
 .header {
-  position: absolute;
+  position: fixed;
   width: 100%;
   padding: 3rem 1rem;
+  z-index: 1000;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
   @include screen(small) {
     padding: 1rem;
   }
@@ -33,5 +35,20 @@
     @include screen(custom, max, 768) {
       display: none;
     }
+  }
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(-100%);
+  pointer-events: none;
+}
+
+.color {
+  a {
+    color: #1e3056 !important;
+  }
+  figure {
+    filter: brightness(0.7);
   }
 }
