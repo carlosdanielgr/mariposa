@@ -1,45 +1,16 @@
 @use "./../../../styles/mixins" as *;
 
 .main {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url(./../../../../public/images/main.png);
-  @include screen(custom, max, 768) {
-    height: 844px;
-    background-image: url(./../../../../public/images/main2.png);
-  }
-  &__content {
-    @include screen(custom, max, 768) {
-      display: flex;
-      flex-direction: column-reverse;
-      height: 100%;
-      padding: 2rem 1rem;
-    }
-  }
-  &__container {
-    padding: 10rem 0 0;
-    max-width: 620px;
-    > p {
-      font-size: 1.12rem;
-    }
-  }
   &__title {
-    font-size: 2.12rem;
-    font-weight: 700;
-    @include screen(small) {
-      font-size: 2.5rem;
-    }
-  }
-  &__mark {
-    position: absolute;
-    bottom: 1rem;
-    right: 3rem;
-    max-width: 140px;
-    @include screen(custom, max, 768) {
-      display: none;
-    }
+    max-width: 620px;
+    width: calc(50vw + 5rem);
   }
 }
