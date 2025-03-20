@@ -48,5 +48,7 @@
 }
 
 .color {
-  background-color: rgba(47, 47, 47, 0.9);
+  background-color: rgba(44, 42, 41, 0.15);
+  backdrop-filter: blur(16px);
+  padding: 1rem;
 }

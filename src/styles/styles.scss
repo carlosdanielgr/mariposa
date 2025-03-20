@@ -61,6 +61,18 @@ a {
   }
 }
 
+.color .menu__button.menu__button {
+  top: 1rem;
+}
+
+:is(input, select).ng-touched.ng-invalid {
+  border-bottom: 1.5px solid red !important;
+}
+
+textarea.ng-touched.ng-invalid {
+  border: 1.5px solid red !important;
+}
+
 :root {
   --mx-width: 820px;
 }

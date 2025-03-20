@@ -8,7 +8,10 @@
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(./../../../../public/images/main.png);
+  background-image: url(./../../../../public/images/mobile.png);
+  @include screen(med-small) {
+    background-image: url(./../../../../public/images/main.png);
+  }
   &__title {
     max-width: 620px;
     width: calc(50vw + 5rem);
